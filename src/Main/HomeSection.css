@@ -4,3 +4,10 @@
 .pic{
     width: 100%;
 }
+.fade-up-name {
+    background: rgba(7,136,255,.2);
+    width: fit-content;
+    padding: 7px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}

@@ -6,7 +6,8 @@ const HomeSection = () => {
     <div className="bg-color">
       <div className="container text-center">
         <div className="row align-items-center">
-          <div className="col-md-6">
+          <div className="col-md-6">  
+            <h6 className="fade-up-name text-light">Jithendra Chitneedi</h6>
             <h3 className="text-light">HAY IAM JANNA! WEB DEVELOPER</h3>
             <p className="text-light">
               Yet bed any for travelling assistance indulgence unpleasing. Not

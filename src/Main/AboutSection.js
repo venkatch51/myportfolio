@@ -12,12 +12,12 @@ const AboutSection = () => {
         </div>
         <div className="col-md-6">
           <div className="about-content">
-            <div class="section-heading">
+            <div class="section-heading text-left">
               <h6 className="text-light">
                 <span>About Us</span>
               </h6>
               <h2 className="text-light">
-                I AM AVAILABLE FOR <span>UI UX DESIGN</span> PROJECTS
+                I AM AVAILABLE FOR <span>Front End Development</span> PROJECTS
               </h2>
             </div>
             <p className="text-light">
