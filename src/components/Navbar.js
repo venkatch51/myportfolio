@@ -15,16 +15,16 @@ const Navbar = () => {
             <a class="active">Home</a>
           </li>
           <li>
-            <a href="#">About Me</a>
+            <a href="#about-section">About Me</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="#">Projects</a>
           </li>
           <li>
             <a href="#">Services</a>
           </li>
           <li>
-            <a>Contact</a>
+            <a href="#contact-section">Contact</a>
           </li>
         </ul>
         <div class="d-flex">

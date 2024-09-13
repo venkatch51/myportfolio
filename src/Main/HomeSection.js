@@ -1,18 +1,22 @@
 import React from "react";
 import "./HomeSection.css";
-import '../images/hero-img.jpg'
+import "../images/hero-img.jpg";
+
 const HomeSection = () => {
   return (
     <div className="bg-color">
       <div className="container text-center">
         <div className="row align-items-center">
-          <div className="col-md-6">  
+          <div className="col-md-6">
             <h6 className="fade-up-name text-light">Jithendra Chitneedi</h6>
-            <h3 className="text-light text-start">HAY IAM JANNA! WEB DEVELOPER</h3>
+            <marquee className="text-light text-start">
+              <h3>Hello -- I AM Jithendra Web Developer</h3>
+            </marquee>
             <p className="text-light text-start">
-              Yet bed any for travelling assistance indulgence unpleasing. Not
-              thoughts all exercise blessing. Indulgence way everything joy
-              alteration boisterous the attachment.
+              Passionate Front-End Developer with expertise in Angular and
+              React.js, delivering dynamic and responsive web applications.
+              Proficient in HTML, CSS, and Bootstrap for crafting visually
+              appealing and user-friendly interfaces.
             </p>
             <div class="d-flex">
               <a class="px-btn d-none d-lg-inline-flex">Lets' Talk</a>
@@ -22,7 +26,11 @@ const HomeSection = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <img className="pic" src='../images/hero-img.jpg' alt="banner-image"/>
+            <img
+              className="pic"
+              src="../images/hero-img.jpg"
+              alt="banner-image"
+            />
           </div>
         </div>
       </div>

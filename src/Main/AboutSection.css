@@ -2,7 +2,7 @@
     background: linear-gradient(90deg,#07233b 1.67%,#041d34 39.95%,#04192d 58.24%,#040e18 80.28%,#050c16 101.48%);
 }
 .banner-image img {
-    max-width: 500px !important;
+    max-width: 300px !important;
     width: 100%;
-    padding: 50px;
+    padding: 50px 0px;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import './FooterSection.css'
 const FooterSection = () => {
   return (
-    <div className="container footer-section">
+    <div className="container footer-section" id="contact-section">
       <footer>
         <ul className="nav justify-content-center border-bottom pb-3 mb-3">
           <li className="nav-item">
