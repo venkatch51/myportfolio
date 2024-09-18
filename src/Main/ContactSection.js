@@ -18,11 +18,11 @@ const ContactSection = () => {
       [name]: value,
     });
   };
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     console.log(formdata);
     try {
-      axios.post("http://localhost:5000/api/contact-data", formdata,{
+      await axios.post("http://localhost:5000/api/contact-data", formdata,{
         headers: {
           'Content-Type': 'application/json'
         }
