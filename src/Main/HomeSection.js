@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./HomeSection.css";
 import "../images/hero-img.jpg";
 import myImg from '../images/my-img.png';
