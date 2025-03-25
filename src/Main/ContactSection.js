@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./ContactSection.css";
 import myImg from '../images/my-img.png';
-import axios from "axios";
 
 const ContactSection = () => {
   const contactDetails = {
@@ -9,7 +8,6 @@ const ContactSection = () => {
     email: "venkatch8051@gmail.com",
     phone: "+91 9959429779",
   };
-  const [error, setError] = useState(null);
   const [formdata, setFormData] = useState({
     email: "",
     name: "",
@@ -26,22 +24,22 @@ const ContactSection = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     console.log(formdata);
-    try {
-      await axios.post("http://localhost:5000/api/contact-data", formdata, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      alert("Submitted sucessfully");
-      setFormData({
-        email: "",
-        name: "",
-        subject: "",
-        message: "",
-      });
-    } catch (error) {
-      alert("Error while submitting the form");
-    }
+    // try {
+    //   await axios.post("https://api.jsonbin.io/v3/b/67dfcdc58561e97a50f12f01", formdata, {
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //   });
+    //   alert("Submitted sucessfully");
+    //   setFormData({
+    //     email: "",
+    //     name: "",
+    //     subject: "",
+    //     message: "",
+    //   });
+    // } catch (error) {
+    //   alert("Error while submitting the form");
+    // }
   };
   return (
     <div className="contactus-section" id="contact">
