@@ -62,6 +62,7 @@ const ContactSection = () => {
               Always Avaialable for freelancing if the right project come in
               Feel Free to Contact me
             </p>
+            <h1>Contact Form coming soon!</h1>
             {/* <form class="row g-3 contact-form">
               <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">
