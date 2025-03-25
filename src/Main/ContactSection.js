@@ -90,7 +90,7 @@ const ContactSection = () => {
                 />
               </div>
               <div class="col-12">
-                <label for="subject" class="form-label">
+                <label for="subject" class="form-label"x>
                   Subject
                 </label>
                 <input
