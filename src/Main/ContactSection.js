@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactSection.css";
 import myImg from '../images/my-img.png';
 
@@ -8,39 +8,39 @@ const ContactSection = () => {
     email: "venkatch8051@gmail.com",
     phone: "+91 9959429779",
   };
-  // const [formdata, setFormData] = useState({
-  //   email: "",
-  //   name: "",
-  //   subject: "",
-  //   message: "",
-  // });
-  // const handleChange = (event) => {
-  //   const { name, value } = event.target;
-  //   setFormData({
-  //     ...formdata,
-  //     [name]: value,
-  //   });
-  // };
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault();
-  //   console.log(formdata);
-  //   // try {
-  //   //   await axios.post("https://api.jsonbin.io/v3/b/67dfcdc58561e97a50f12f01", formdata, {
-  //   //     headers: {
-  //   //       "Content-Type": "application/json",
-  //   //     },
-  //   //   });
-  //   //   alert("Submitted sucessfully");
-  //   //   setFormData({
-  //   //     email: "",
-  //   //     name: "",
-  //   //     subject: "",
-  //   //     message: "",
-  //   //   });
-  //   // } catch (error) {
-  //   //   alert("Error while submitting the form");
-  //   // }
-  // };
+  const [formdata, setFormData] = useState({
+    email: "",
+    name: "",
+    subject: "",
+    message: "",
+  });
+  const apiKey = '$2a$10$aIVhWWWVW8zc9qidWsfl4OTPyg.Qn8O1aEqzHWKJVd5MKqlPcaxLy'
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formdata,
+      [name]: value,
+    });
+  };
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      let request = await fetch('https://api.jsonbin.io/v3/b',{
+        method: 'POST',
+        headers: {
+          'Content-Type':'application/json',
+          'X-Master-Key': apiKey
+        },
+        body: JSON.stringify(formdata)
+      })
+      const response = await request.json(); 
+      console.log("Form submitted successfully:", response);
+      alert("Form Submitted")
+    }
+    catch(error){
+      console.log("error handling the request",error)
+    }
+  };
   return (
     <div className="contactus-section" id="contact">
       <div className="container">
@@ -62,8 +62,8 @@ const ContactSection = () => {
               Always Avaialable for freelancing if the right project come in
               Feel Free to Contact me
             </p>
-            <h1>Contact Form coming soon!</h1>
-            {/* <form class="row g-3 contact-form">
+            <h1 className="text-light">Contact Form coming soon!</h1>
+            <form class="row g-3 contact-form">
               <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">
                   Email
@@ -127,7 +127,7 @@ const ContactSection = () => {
                   Submit
                 </button>
               </div>
-            </form> */}
+            </form>
           </div>
         </div>
       </div>
